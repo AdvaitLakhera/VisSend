@@ -2,7 +2,7 @@
   "name": "base64-file-converter",
   "version": "1.0.0",
   "description": "High-performance Base64 file encoding/decoding web application",
-  "main": "public/index.html",
+  "main": "index.html",
   "scripts": {
     "start": "serve ./public",
     "test": "echo \"Error: no test specified\" && exit 1",
