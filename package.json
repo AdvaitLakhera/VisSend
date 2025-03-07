@@ -1,0 +1,40 @@
+{
+  "name": "base64-file-converter",
+  "version": "1.0.0",
+  "description": "High-performance Base64 file encoding/decoding web application",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "serve ./public",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"public/**/*.{js,html,css}\"",
+    "lint": "eslint public/js/main.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "base64",
+    "file-converter",
+    "web-app",
+    "javascript"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "base64-js": "^1.5.1"
+  },
+  "lint-staged": {
+    "public/**/*.{js,html,css}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
