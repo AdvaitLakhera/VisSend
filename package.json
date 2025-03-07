@@ -2,12 +2,12 @@
   "name": "base64-file-converter",
   "version": "1.0.0",
   "description": "High-performance Base64 file encoding/decoding web application",
-  "main": "index.html",
+  "main": "docs/index.html",
   "scripts": {
     "start": "serve ./public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"public/**/*.{js,html,css}\"",
-    "lint": "eslint public/js/main.js",
+    "lint": "eslint docs/js/main.js",
     "prepare": "husky install"
   },
   "keywords": [
