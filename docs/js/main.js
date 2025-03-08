@@ -50,7 +50,7 @@ class Base64Converter {
             return;
         }
 
-        if (file.size > 100 * 1024 * 1024) { // 100MB limit
+        if (file.size > 2000 * 1024 * 1024) { // 100MB limit
             this.showStatus('File too large (max 100MB)', 'error');
             return;
         }
